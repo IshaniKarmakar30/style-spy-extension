@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h3>Style Spy</h3>
+    <span class="badge" id="statusBadge">Active</span>
+  </div>
+
+  <!-- Color Palette Section -->
+  <section class="section">
+    <div class="section-title">Colors (Click to copy)</div>
+    <div id="colorContainer" class="color-grid">
+      <div class="empty-text">Scanning page colors...</div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section class="section">
+    <div class="section-title">Fonts & Typography</div>
+    <div id="fontContainer" class="font-list">
+      <div class="empty-text">Scanning fonts...</div>
+    </div>
+  </section>
+
+  <!-- Action Buttons -->
+  <div class="button-group">
+    <button id="copyCssBtn" class="btn primary-btn">Copy as CSS</button>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- Save Kit Section -->
+  <section class="section">
+    <div class="section-title">Save as Style Kit</div>
+    <div class="kit-input-row">
+      <input type="text" id="kitNameInput" placeholder="Kit name (e.g. Minimal Portfolio)">
+      <button id="saveKitBtn" class="btn secondary-btn">Save</button>
+    </div>
+  </section>
+
+  <!-- Saved Kits Section -->
+  <section class="section">
+    <div class="section-title">Saved Kits</div>
+    <div id="savedKitsContainer" class="saved-kits-list">
+      <div class="empty-text">No kits saved yet.</div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
